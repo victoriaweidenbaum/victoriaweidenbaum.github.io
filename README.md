@@ -45,11 +45,17 @@ Then open <http://localhost:8000>.
 
 ## Deploying
 
-Any static host works. The simplest options:
+The site is hosted on GitHub Pages from the public repository
+`victoriaweidenbaum/victoriaweidenbaum.github.io`, served at
+`victoriaweidenbaum.me` (see the `CNAME` file). To publish a change:
 
-- **Netlify**: drag the folder onto <https://app.netlify.com/drop>, or connect a Git repo.
-- **Cloudflare Pages** or **GitHub Pages**: connect a Git repo, no build step needed.
+```bash
+python3 build.py && git add -A && git commit -m "Describe the change" && git push
+```
 
-Then point the `victoriaweidenbaum.me` domain at the new host (the host
-shows the exact DNS records to add) and cancel the Squarespace website
-subscription once the new site is live.
+GitHub rebuilds the site in about a minute. There is no build step on
+GitHub's side: it serves the files exactly as committed (`.nojekyll`).
+
+DNS for the domain lives at Squarespace Domains: four `A` records for the
+bare domain pointing at GitHub Pages, and a `CNAME` for `www` pointing at
+`victoriaweidenbaum.github.io`.
