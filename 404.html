@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Victoria Weidenbaum</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@400;600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="photo-flower" clipPathUnits="objectBoundingBox"><path d="M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5"/></clipPath></defs></svg>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/"><img src="/images/logo.webp" alt="Victoria Weidenbaum" width="438" height="166"></a>
+      <nav class="site-nav" aria-label="Main"><a href="/">Portfolio</a><a href="/about/">About</a></nav>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-box"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><a href="/">Portfolio</a><a href="/about/">About</a></nav>
+
+  <main id="page">
+    <section class="section"><div class="content-wrapper"><div class="content notfound"><h2>Page not found</h2><p>The page you are looking for doesn’t exist. <a href="/">Go back to the portfolio</a>.</p></div></div></section>
+  </main>
+
+  <footer class="site-footer section">
+    <div class="content-wrapper">
+      <div class="footer-row">
+        <div class="footer-col left"><h4>© 2026</h4></div>
+        <div class="footer-col right"><h4><a href="mailto:vweidenbaum@gmail.com">vweidenbaum@gmail.com</a></h4></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.burger');
+      btn.addEventListener('click', function () {
+        var open = document.body.classList.toggle('menu-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>

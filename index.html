@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victoria Weidenbaum</title>
+  <meta name="description" content="Victoria Weidenbaum — Staff Product Designer in San Francisco. Portfolio of work at Retool, Dropbox and Instacart.">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@400;600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="photo-flower" clipPathUnits="objectBoundingBox"><path d="M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5"/></clipPath></defs></svg>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/"><img src="/images/logo.webp" alt="Victoria Weidenbaum" width="438" height="166"></a>
+      <nav class="site-nav" aria-label="Main"><a href="/" class="active">Portfolio</a><a href="/about/">About</a></nav>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-box"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><a href="/" class="active">Portfolio</a><a href="/about/">About</a></nav>
+
+  <main id="page">
+    <section class="section fluid h-custom"><div class="content-wrapper"><div class="content">
+      <div class="fe" style="--rows-m:15;--rows-d:13">
+      <div class="blk sq" style="--m:1/3/8/9;--d:2/7/11/13;--jm:center;--fp:52% 98.4%"><div class="img-square mask-flower"><img src="/images/victoria-home.webp" alt="Victoria Weidenbaum"></div></div>
+      <div class="blk" style="--m:8/2/16/10;--d:2/14/11/22;--jd:center"><div class="text hero-intro"><h1 class="hero-title">Hi, I’m Victoria!</h1><p>Product Designer with 11+ years of experience helping Bay Area tech companies build products people rely on every day. Most recently at Retool, with previous roles at Dropbox and Instacart. I live in San Francisco with my dog Betty and cat Henry. I'm the artist behind clay studio <a href="https://stonebloom.studio">Stone Bloom</a>.</p><a class="btn" href="/s/VictoriaWeidenbaum-Resume-generic.pdf" target="_blank" rel="noopener">View resume</a></div></div>
+      </div>
+    </div></div></section>
+    <section class="portfolio-section">
+      <div class="portfolio-grid">
+        <a class="grid-item" href="/portfolio/avail/"><div class="grid-image"><img src="/images/grid-avail.jpg" alt="Avail 0→1"></div><div class="portfolio-text"><h3 class="portfolio-title">Avail 0→1</h3></div></a>
+        <a class="grid-item" href="/portfolio/iaredesign/"><div class="grid-image"><img src="/images/grid-ia-redesign.png" alt="Information Architecture Redesign • Retool"></div><div class="portfolio-text"><h3 class="portfolio-title">Information Architecture Redesign • Retool</h3></div></a>
+        <a class="grid-item" href="/portfolio/adminconsoleredesign/"><div class="grid-image"><img src="/images/grid-admin-console.webp" alt="Admin Console Redesign • Dropbox"></div><div class="portfolio-text"><h3 class="portfolio-title">Admin Console Redesign • Dropbox</h3></div></a>
+        <a class="grid-item" href="/portfolio/securitystrategy/"><div class="grid-image"><img src="/images/grid-security-strategy.webp" alt="Security Strategy • Dropbox"></div><div class="portfolio-text"><h3 class="portfolio-title">Security Strategy • Dropbox</h3></div></a>
+        <a class="grid-item" href="/portfolio/checkout/"><div class="grid-image"><img src="/images/grid-checkout.webp" alt="Checkout • Instacart"></div><div class="portfolio-text"><h3 class="portfolio-title">Checkout • Instacart</h3></div></a>
+        <a class="grid-item" href="/portfolio/help/"><div class="grid-image"><img src="/images/grid-help-center.webp" alt="Help Center • Instacart"></div><div class="portfolio-text"><h3 class="portfolio-title">Help Center • Instacart</h3></div></a>
+        <a class="grid-item" href="/portfolio/shoppingimprovements/"><div class="grid-image"><img src="/images/grid-shopping-improvements.webp" alt="Shopping Improvements • Instacart"></div><div class="portfolio-text"><h3 class="portfolio-title">Shopping Improvements • Instacart</h3></div></a>
+        <a class="grid-item" href="/portfolio/missingcustomer/"><div class="grid-image"><img src="/images/grid-missing-customer.webp" alt="Missing Customer • Instacart"></div><div class="portfolio-text"><h3 class="portfolio-title">Missing Customer • Instacart</h3></div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section">
+    <div class="content-wrapper">
+      <div class="footer-row">
+        <div class="footer-col left"><h4>© 2026</h4></div>
+        <div class="footer-col right"><h4><a href="mailto:vweidenbaum@gmail.com">vweidenbaum@gmail.com</a></h4></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.burger');
+      btn.addEventListener('click', function () {
+        var open = document.body.classList.toggle('menu-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    })();
+  </script>
+</body>
+</html>
